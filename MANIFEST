@@ -1,0 +1,6 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/Data-JPack-Bootstrap-App.t
+lib/Data/JPack/Bootstrap/App.pm

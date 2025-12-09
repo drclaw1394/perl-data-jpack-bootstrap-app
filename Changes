@@ -1,0 +1,6 @@
+Revision history for Perl extension Data::JPack::Bootstrap::App.
+
+0.01  Mon Dec  8 14:01:28 2025
+	- original version; created by h2xs 1.23 with options
+		--name Data::JPack::Bootstrap::App -X -P -b v5.36.0
+
