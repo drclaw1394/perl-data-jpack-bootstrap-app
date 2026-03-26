@@ -1,5 +1,10 @@
 use 5.036000;
 use ExtUtils::MakeMaker;
+
+use File::ShareDir::Install;
+
+install_share dist=>"share";
+
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
 # the contents of the Makefile that is written.
 WriteMakefile(
@@ -12,3 +17,6 @@ WriteMakefile(
     #Value must be from legacy list of licenses here
     #https://metacpan.org/pod/Module::Build::API
 );
+
+package MY;
+use File::ShareDir::Install qw(postamble);

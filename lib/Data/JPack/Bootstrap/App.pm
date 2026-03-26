@@ -40,6 +40,12 @@ sub add_to_container {
   #$t->add_resource("app/lib/bootstrap/icon/font/bootstrap-icons.min.css");#,static=>{config=>{output=>{filter=>{name=>"jpack"}}}}); 
   $t->add_resource("app/lib/bootstrap/js/bootstrap.min.js",static=>{config=>{output=>{filter=>{name=>"jpack"}}}}); 
 
+
+  # While these are not direclty referenced in any html, they are referenced by the css file, but it isn't processed as a template so we add here
+  #
+  $t->add_resource("app/lib/bootstrap/icon/font/fonts/bootstrap-icons.woff");
+  $t->add_resource("app/lib/bootstrap/icon/font/fonts/bootstrap-icons.woff2");
+
   $t->append_slot(
     #head_start => qq|<script                   src="@{[$t->add_resource("app/lib/popper.min.js")]}"></script>|,
     head_start => qq|<link   rel="stylesheet" href="@{[$t->add_resource("app/lib/bootstrap/css/bootstrap.min.css")]}">|,
